@@ -1,0 +1,197 @@
+*{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+html , body {
+   height : 100%;
+   width : 100%;
+   scroll-behavior: smooth;
+   position: relative;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    position: relative;
+}
+.main a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navBar{
+    padding: 0 3vmax;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7vmax;
+}
+.navBar > .mid ,.navBar .right{
+    display: flex;   
+}
+.navBar h5{
+    margin: 0 1vmax;
+    font-size: 1.2vmax;
+}
+.navBar > .right > h5{
+    margin: 0 .6vmax;
+}
+.navBar > .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navBar i{
+    font-size: 2vmax;
+}
+.navBar > .left > h5{
+    margin: 0;
+}
+.items{
+    min-height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+    /* background-color: rgb(214, 170, 170); */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: 2vmax 0;
+}
+.item{
+    /* background-color: red; */
+    height: 45vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vmax 0;
+    margin: auto;
+
+    transition: .3s all linear;
+}
+.items > .item .line{
+    width:25px;
+    height: 1px;
+    background-color: #000;
+    margin: .5vmax 0;
+}
+
+.items > .item > .image img{
+    height: 290px;
+    
+}
+.items > .item .item_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.items > .item:hover{
+    scale: 1.1;
+
+}
+.main > .about{
+    width: 100vw;
+    height: 40vh;
+    background-color: #F7F6F6;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax 0;
+}
+.main > .about > p{
+    width: 50%;
+    font-weight: 200;
+    font-size: 1.7vmax;
+    text-align: center;
+    line-height: 2.5vmax;
+    margin-top: 1.5vmax;
+} 
+.main .contact{
+    background-color: #000;
+    height: 30vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .contact h5{
+    margin: 1vmax 0;
+    font-size: 1.1vmax;
+}
+.main .contact > .mid{
+    margin: 0 10vmax;
+}
+
+.main > .footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #000;
+    color: rgb(149, 149, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevoverlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(112, 112, 112, 0.5);
+    z-index: 200;
+    position: fixed;
+    display: none;
+
+
+}
+
+.previewData{
+    font-family: sans-serif;
+    height: 70vh;
+    width: 60vw;
+
+    margin: 15vh auto;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vmax;
+
+}
+.previewData > .right{
+    display: flex;
+    flex-direction: column;
+
+}
+.previewData > .right > h6{
+    margin-top: 1vmax ;
+}
+.previewData > .right > h4{
+    margin: 1vmax 0;
+}
+.previewData > .right > input{
+    margin: .7vmax 0; 
+    width: 40%;
+}
+.previewData > .right > button{
+    width: 100%;
+    padding: .7vmax 1.2vmax;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.previewData > .left > img{
+    height: 500px;
+    margin-left: -10vw;
+}
+.previewData > i{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    font-size: 2vmax;
+}
